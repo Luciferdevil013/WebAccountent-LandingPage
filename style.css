@@ -1,0 +1,302 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+}
+
+section,
+footer {
+  display: flex;
+  height: 100vh;
+  width:  100%;
+}
+
+.left{
+  height: 100vh;
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.212);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left video{
+  width: 80%;
+  height: 90%;
+  object-fit: cover;
+  object-position: center;
+  filter: invert(-1);
+  background-color: transparent !important;
+}
+
+.right{
+  height: 100vh;
+  width: 50%;
+  background-color: #13a3d79c;
+  display: flex;
+  padding: 0 8vw;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.right h1{
+  font-weight: 500;
+  width: 70%;
+}
+
+.right h4{
+  font-family: "Comfortaa", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.right a{
+  width: fit-content;
+  padding: 2vh 3vw;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: #13a3d7;
+  color: antiquewhite;
+  border-radius: 10px;
+}
+
+footer{
+  background-color:  black;
+  color:  white;
+}
+
+.full-screen{
+  width: 100%;
+  height: 100vh;
+}
+
+.heading{
+  font-family: "Comfortaa", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.para{
+  font-family: "Nunito", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  width: 75%;
+  text-align: center;
+}
+
+.page2{
+  height: 130vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 8vh 0;
+}
+
+.page2 #service{
+  width: 100%;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.page2 #service .services{
+  width: 28%;
+  height: 70%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content:center ;
+  background-color: aliceblue;
+  cursor: pointer;
+  position: relative;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+
+.page2 #service .services img{
+  width: 85%;
+  height: 90%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.page2 #service .services .details{
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  transition: 1s all ease;
+  background-color: #ff2d99c9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 2vw;
+  text-align: center;
+  gap: 1rem;
+}
+
+.page2 #service .services .details h1{
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: aliceblue;
+}
+
+.page2 #service .services .details h4{
+  font-family: "Comfortaa", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: aliceblue;
+}
+
+.page2 #service .services:hover .details{
+  transform: translateY(-100%);
+}
+
+
+.constumer{
+  width: 100%;
+  height: 25vh;
+  background-color: rgba(135, 199, 229, 0.308);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.constumer h1{
+  font-size: 2rem;
+}
+
+.constumer h4{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.page3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.page3 h1{
+  font-size: 3rem;
+}
+#review{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+#review .regards{
+  width: 80%;
+  height: 100%;
+  background-color: rgba(135, 199, 229, 0.308);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#review .regards .client-images{
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background-color: #ff2d99c9;
+  padding: 4px;
+}
+
+#review .regards .client-images img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+#review .regards .client-say{
+  width: 70%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+#review .regards .client-say h1{
+  font-size: 2rem;
+}
+
+#review .regards .client-say p{
+  width: 90%;
+  text-align: left;
+}
+footer{
+  height: 95vh;
+  justify-content: space-around;
+}
+footer .section{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 1rem;
+  padding: 10vh 4vw;
+  justify-content: flex-end;
+}
+
+footer .section p{
+  width: 100%;
+  text-align: left;
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+}
+
+footer .section a{
+  font-family: "Nunito", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: aliceblue;
+}
+
+
+footer .section h4{
+  font-family: "Comfortaa", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+footer .section i{
+  font-size: 2rem;
+}
+
+.last-section{
+  padding: 1vh 0;
+  text-align: center;
+  height: 5vh;
+}
+.last-section p{
+  width: 100%;
+  font-size: 0.9rem;
+}
